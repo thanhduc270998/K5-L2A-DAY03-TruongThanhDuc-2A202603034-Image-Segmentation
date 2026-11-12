@@ -53,11 +53,11 @@ Chọn object đầu tiên bạn tự vẽ ở `medium_instance`, trước khi x
 
 Chọn một lỗi **có thật** trong bài. Nếu công cụ lỗi khiến bạn chưa sửa được, ghi rõ đã thử gì và cần coach hỗ trợ gì; không ghi “đã sửa” khi chưa sửa.
 
-- Task/ảnh/vùng: …
-- Lỗi thuộc loại: sai lớp / thiếu-thừa vật / gộp-tách / biên / phủ vùng / khác: …
-- Bằng chứng tôi nhìn thấy: …
-- Quy tắc và hành động sửa: …
-- Sau sửa đã Save và export lại chưa? …
+- Task/ảnh/vùng: Task hard_panoptic, ảnh 000000350023.jpg, vùng traffic-light
+- Lỗi thuộc loại: sai lớp / thiếu-thừa vật / gộp-tách / biên / phủ vùng / khác: lỗi phân biệt sai đối tượng mask và nhầm cột đèn thành stuff
+- Bằng chứng tôi nhìn thấy: Tô đèn tín hiệu giao thông mà tô cả cột đèn, kèm 2 cái cột đèn 1 ID
+- Quy tắc và hành động sửa: traffic light chỉ là đèn giao thông chứ không bao gồm cột, hành động là xóa vùng bị mask sai, phân chia mỗi đèn 1 ID
+- Sau sửa đã Save và export lại chưa? tôi đã save và export lại
 
 Nếu bạn **đã xem Summary tự đánh giá trên GitHub Actions hoặc tự chạy script**, ghi ngắn một kết quả liên quan lỗi vừa sửa (ví dụ task, metric trước/sau nếu có): … / chưa có điểm. Scorecard ba tier tối đa **82**, không phải điểm cuối trên 100. Không tự ghi PASS/top 3/bonus; người phụ trách xác nhận theo tiêu chí lớp. Không đưa file ground truth vào fork.
 
